@@ -8,7 +8,13 @@ open Fetch.Types
 open Thoth.Fetch
 open Fulma
 open Thoth.Json
+open Fable.Core.JS
+module Trial=
+    open FSharpPlus
 
+    let res1 = map ((+) 2) (Some 2)
+
+    console.log "hello"
 open Shared
 
 // The model holds data that you want to keep track of while the application is running
