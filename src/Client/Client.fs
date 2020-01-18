@@ -11,10 +11,10 @@ open Thoth.Json
 open Fable.Core.JS
 module Trial=
     open FSharpPlus
-
-    let res1 = map ((+) 2) (Some 2)
-
-    console.log "hello"
+    open FSharpPlus.Control
+    let res1 = Map.Invoke ((+) 2) (Some 2)
+    //let res2 = map ((+) 2) (Some 2)
+    console.log ("hello", res1)
 open Shared
 
 // The model holds data that you want to keep track of while the application is running
